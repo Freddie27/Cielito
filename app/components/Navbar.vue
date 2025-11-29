@@ -48,7 +48,7 @@
         <div class="flex items-center space-x-2 lg:space-x-3">
         <a
             href="#"
-            @click.prevent="rainHearts()"
+            @click.prevent=""
             class="relative hidden lg:inline-flex items-center px-4 lg:px-6 py-2 bg-gradient-to-r
               from-blue-500 via-sky-400 to-cyan-400 dark:from-blue-600 dark:via-purple-600 dark:to-indigo-700
               text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -163,35 +163,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useHeartRain } from '~/composables/useHeartRain'
-
-const { rainHearts } = useHeartRain()
-
-const { trigger } = useHeartRain()
-
-watch(trigger, () => {
-  startHeartRain()
-})
-
-function startHeartRain() {
-  for (let i = 0; i < 30; i++) {
-    const heart = document.createElement('div')
-    heart.textContent = '❤️'
-    heart.classList.add('falling-heart')
-
-    heart.style.left = `${Math.random() * 100}vw`
-    heart.style.fontSize = `${Math.random() * 24 + 12}px`
-    heart.style.animationDuration = `${Math.random() * 1 + 2}s`
-
-    document.body.appendChild(heart)
-
-    setTimeout(() => {
-      heart.remove()
-    }, 3000)
-  }
-}
-
-
 
 // Estado del menú móvil
 const menuOpen = ref(false)
