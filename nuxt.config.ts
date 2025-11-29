@@ -8,8 +8,8 @@ export default defineNuxtConfig({
 
   // Configuración del módulo color-mode
   colorMode: {
-    preference: 'light', // 'light' | 'dark' | 'system'
-    fallback: 'light',
+    preference: 'dark', // 'light' | 'dark' | 'system'
+    fallback: 'dark',
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
     storage: 'cookie'
