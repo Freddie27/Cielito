@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
-    storage: 'cookie'
+    storage: 'localStorage'
   },
   nitro: {
     preset: 'netlify',
