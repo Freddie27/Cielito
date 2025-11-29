@@ -70,7 +70,7 @@ onMounted(async () => {
         <p class="text-lg text-slate-300/80 max-w-md mx-auto font-light animate-fade">
           "Te quiero mucho mi cielito♡" <br />
           "Espero que tengamos muchos más momentos lindos" <br />
-          "♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡" <br />
+          "♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡" <br />
         </p>
 
         <!-- BARRA DE ENERGÍA CELESTIAL -->
